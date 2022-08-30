@@ -1,0 +1,39 @@
+{
+  "name": "my-blog-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next build && next export",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.2",
+    "@fortawesome/free-brands-svg-icons": "^6.1.2",
+    "@fortawesome/free-regular-svg-icons": "^6.1.2",
+    "@fortawesome/free-solid-svg-icons": "^6.1.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "classnames": "^2.3.1",
+    "date-fns": "^2.29.2",
+    "gray-matter": "^4.0.3",
+    "next": "12.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "remark": "^14.0.2",
+    "remark-html": "^15.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "18.7.13",
+    "@types/react": "18.0.17",
+    "@types/react-dom": "18.0.6",
+    "autoprefixer": "^10.4.8",
+    "eslint": "8.22.0",
+    "eslint-config-next": "12.2.5",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8",
+    "typescript": "4.8.2"
+  }
+}
