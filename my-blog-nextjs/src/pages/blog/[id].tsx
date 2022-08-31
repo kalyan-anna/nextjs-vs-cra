@@ -1,8 +1,8 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
 import React from 'react';
-import { getAllBlogs, getBlogById } from '../../../lib/api';
-import markdownToHtml from '../../../lib/markdownToHtml';
+import { getAllBlogs, getBlogById } from '../../lib/api';
+import markdownToHtml from '../../lib/markdownToHtml';
 import { BlogBody } from '../../components/BlogBody';
 import { BlogHeader } from '../../components/BlogHeader';
 import { BlogLayout } from '../../layouts/BlogLayout';
