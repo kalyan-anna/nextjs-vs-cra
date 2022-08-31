@@ -1,5 +1,5 @@
 import { format } from 'date-fns';
-import Link from 'next/link';
+import { Link } from 'react-router-dom';
 import React from 'react';
 
 type BlogExcerptProps = {
@@ -7,7 +7,6 @@ type BlogExcerptProps = {
   title: string;
   id: string;
   excerpt: string;
-  prefetch?: boolean;
 };
 
 export const BlogExcerpt: React.FC<BlogExcerptProps> = ({
@@ -15,7 +14,6 @@ export const BlogExcerpt: React.FC<BlogExcerptProps> = ({
   title,
   id,
   excerpt,
-  prefetch = false,
 }) => {
   return (
     <article>
@@ -30,8 +28,11 @@ export const BlogExcerpt: React.FC<BlogExcerptProps> = ({
           <div className="space-y-6">
             <div>
               <h2 className="text-2xl font-bold leading-8 tracking-tight">
-                <Link href={`/blog/${id}`} prefetch={prefetch}>
-                  <a className="text-gray-900 dark:text-gray-100">{title}</a>
+                <Link
+                  to={`/blog/${id}`}
+                  className="text-gray-900 dark:text-gray-100"
+                >
+                  {title}
                 </Link>
               </h2>
             </div>
@@ -40,13 +41,12 @@ export const BlogExcerpt: React.FC<BlogExcerptProps> = ({
             </div>
           </div>
           <div className="text-base font-medium leading-6">
-            <Link href={`/blog/${id}`} prefetch={prefetch}>
-              <a
-                className="text-indigo-500 hover:text-indigo-600 "
-                aria-label={`Read "${title}"`}
-              >
-                Read more &rarr;
-              </a>
+            <Link
+              to={`/blog/${id}`}
+              className="text-indigo-500 hover:text-indigo-600 "
+              aria-label={`Read "${title}"`}
+            >
+              Read more &rarr;
             </Link>
           </div>
         </div>
