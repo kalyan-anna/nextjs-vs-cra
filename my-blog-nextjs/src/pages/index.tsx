@@ -47,7 +47,7 @@ const HomePage: NextPage<HomePageProps> = ({ blogs }) => {
       <hr className="border-gray-500" />
 
       <ul className="divide-y divide-gray-200 dark:divide-gray-700">
-        {blogs.map(({ title, excerpt, date, id }) => {
+        {blogs.map(({ title, excerpt, date, id }, index) => {
           return (
             <li key={id} className="py-12">
               <BlogExcerpt
@@ -55,6 +55,7 @@ const HomePage: NextPage<HomePageProps> = ({ blogs }) => {
                 excerpt={excerpt}
                 date={date}
                 id={id}
+                prefetch={index === 0}
               />
             </li>
           );

@@ -23,7 +23,7 @@ export const SiteHeader: React.FC<SiteHeaderProps> = ({
           <nav>
             <ul className="flex items-center justify-between font-bold text-sm text-white uppercase no-underline">
               <li>
-                <Link href="/about">
+                <Link href="/about" prefetch={false}>
                   <a className="hover:text-gray-200 hover:underline px-4">
                     About
                   </a>
@@ -89,28 +89,28 @@ export const SiteHeader: React.FC<SiteHeaderProps> = ({
         >
           <div className="w-full flex-grow sm:flex sm:items-center sm:w-auto">
             <div className="w-full container mx-auto flex flex-col sm:flex-row items-center justify-center text-sm font-bold uppercase mt-0 px-6 py-2">
-              <Link href="/css">
+              <Link prefetch={false} href="/category/css">
                 <a className="hover:bg-gray-400 rounded py-2 px-4 mx-2">CSS</a>
               </Link>
-              <Link href="/html">
+              <Link prefetch={false} href="/category/html">
                 <a className="hover:bg-gray-400 rounded py-2 px-4 mx-2">HTML</a>
               </Link>
-              <Link href="/javascript">
+              <Link prefetch={false} href="/category/javascript">
                 <a className="hover:bg-gray-400 rounded py-2 px-4 mx-2">
                   JavaScript
                 </a>
               </Link>
-              <Link href="/firebase">
+              <Link prefetch={false} href="/category/firebase">
                 <a className="hover:bg-gray-400 rounded py-2 px-4 mx-2">
                   Firebase
                 </a>
               </Link>
-              <Link href="/react">
+              <Link prefetch={false} href="/category/react">
                 <a className="hover:bg-gray-400 rounded py-2 px-4 mx-2">
                   React
                 </a>
               </Link>
-              <Link href="/accessibility">
+              <Link prefetch={false} href="/category/accessibility">
                 <a className="hover:bg-gray-400 rounded py-2 px-4 mx-2">
                   Accessibility
                 </a>

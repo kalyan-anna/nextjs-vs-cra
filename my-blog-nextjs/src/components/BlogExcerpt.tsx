@@ -7,6 +7,7 @@ type BlogExcerptProps = {
   title: string;
   id: string;
   excerpt: string;
+  prefetch?: boolean;
 };
 
 export const BlogExcerpt: React.FC<BlogExcerptProps> = ({
@@ -14,6 +15,7 @@ export const BlogExcerpt: React.FC<BlogExcerptProps> = ({
   title,
   id,
   excerpt,
+  prefetch = false,
 }) => {
   return (
     <article>
@@ -31,6 +33,7 @@ export const BlogExcerpt: React.FC<BlogExcerptProps> = ({
                 <Link
                   href={`/blog/${id}`}
                   className="text-gray-900 dark:text-gray-100"
+                  prefetch={prefetch}
                 >
                   {title}
                 </Link>
@@ -41,7 +44,7 @@ export const BlogExcerpt: React.FC<BlogExcerptProps> = ({
             </div>
           </div>
           <div className="text-base font-medium leading-6">
-            <Link href={`/blog/${id}`}>
+            <Link href={`/blog/${id}`} prefetch={prefetch}>
               <a
                 className="text-indigo-500 hover:text-indigo-600 "
                 aria-label={`Read "${title}"`}

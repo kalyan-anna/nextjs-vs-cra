@@ -9,7 +9,7 @@ export const BlogLayout: React.FC<any> = ({ children }) => {
           className="w-full py-4 border-b bg-sky-100"
           x-data="{ open: false }"
         >
-          <Link href="/">
+          <Link href="/" prefetch={false}>
             <a className="hover:bg-gray-400 text-blue-800 rounded py-2 px-4 mx-2">
               &larr; Home
             </a>
