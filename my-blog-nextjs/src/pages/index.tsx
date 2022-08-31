@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Link from 'next/link';
-import { getAllBlogs } from '../../lib/api';
+import { getAllBlogs } from '../lib/api';
 import { SiteLayout } from '../layouts/SiteLayout';
 import { format } from 'date-fns';
 import { BlogExcerpt } from '../components/BlogExcerpt';

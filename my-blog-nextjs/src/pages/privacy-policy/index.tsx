@@ -1,6 +1,6 @@
 import React from 'react';
-import { getPrivacyPolicy } from '../../../lib/api';
-import markdownToHtml from '../../../lib/markdownToHtml';
+import { getPrivacyPolicy } from '../../lib/api';
+import markdownToHtml from '../../lib/markdownToHtml';
 import { SiteLayout } from '../../layouts/SiteLayout';
 
 type PrivacyPolicyPageProps = {
