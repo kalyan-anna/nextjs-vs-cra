@@ -16,39 +16,24 @@ export function getPrivacyPolicy() {
   return content;
 }
 
-export function getBlogBySlug(slug: string) {
-  const fullPath = join(blogDirectory, slug);
+export function getBlogById(id: string) {
+  const fullPath = join(blogDirectory, id);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
 
   const markDown: MarkDown = {
     ...data,
     content: content,
-    id: slug,
+    id,
   };
-
-  // markDown.
-  // // Ensure only the minimal needed data is exposed
-  // fields.forEach((field) => {
-  //   if (field === 'slug') {
-  //     items[field] = realSlug
-  //   }
-  //   if (field === 'content') {
-  //     items[field] = content
-  //   }
-
-  //   if (typeof data[field] !== 'undefined') {
-  //     items[field] = data[field]
-  //   }
-  // })
 
   return markDown;
 }
 
 export function getAllBlogs() {
-  const slugs = fs.readdirSync(blogDirectory);
-  const blogs = slugs
-    .map((slug) => getBlogBySlug(slug))
+  const ids = fs.readdirSync(blogDirectory);
+  const blogs = ids
+    .map((id) => getBlogById(id))
     // sort posts by date in descending order
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
   return blogs;
