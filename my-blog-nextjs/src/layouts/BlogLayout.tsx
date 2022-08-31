@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import React from 'react';
+import { Meta } from '../components/Meta';
 
 export const BlogLayout: React.FC<any> = ({ children }) => {
   return (
-    <div>
+    <>
+      <Meta />
       <header>
         <nav
           className="w-full py-4 border-b bg-sky-100"
@@ -16,7 +18,7 @@ export const BlogLayout: React.FC<any> = ({ children }) => {
           </Link>
         </nav>
       </header>
-      <div>{children}</div>
-    </div>
+      <main>{children}</main>
+    </>
   );
 };
