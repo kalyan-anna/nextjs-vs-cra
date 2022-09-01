@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { SiteLayout } from '../layouts/SiteLayout';
-
+import styles from './PrivacyPolicyPage.module.scss';
 import ReactMarkdown from 'react-markdown';
+import cx from 'classnames';
 
 const PrivacyPolicyPage = () => {
   const [markdown, setMarkdown] = useState('');
@@ -22,7 +23,7 @@ const PrivacyPolicyPage = () => {
         </h1>
         <ReactMarkdown
           children={markdown}
-          className="container px-5 py-24 mx-auto"
+          className={cx('container px-5 py-24 mx-auto', styles['markdown'])}
         />
       </section>
     </SiteLayout>

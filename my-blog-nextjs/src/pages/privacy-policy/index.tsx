@@ -3,6 +3,8 @@ import { getPrivacyPolicy } from '../../lib/api';
 import markdownToHtml from '../../lib/markdownToHtml';
 import { SiteLayout } from '../../layouts/SiteLayout';
 import { NextPage } from 'next';
+import styles from './PrivacyPolicy.module.scss';
+import cx from 'classnames';
 
 type PrivacyPolicyPageProps = {
   content: string;
@@ -16,7 +18,7 @@ const PrivacyPolicyPage: NextPage<PrivacyPolicyPageProps> = ({ content }) => {
           Privacy Policy
         </h1>
         <div
-          className="container px-5 py-24 mx-auto"
+          className={cx('container px-5 py-24 mx-auto', styles['markdown'])}
           dangerouslySetInnerHTML={{ __html: content }}
         />
       </section>
