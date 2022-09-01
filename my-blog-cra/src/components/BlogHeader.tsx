@@ -6,6 +6,7 @@ type Props = {
 };
 
 export const BlogHeader = ({ title, date }: Props) => {
+  console.log('date:', date);
   return (
     <>
       <h1 className="text-8xl font-bold tracking-tighter leading-tight mb-12 text-center">

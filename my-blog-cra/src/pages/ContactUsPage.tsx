@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SiteLayout } from '../../layouts/SiteLayout';
+import { SiteLayout } from '../layouts/SiteLayout';
 
 const ContactUsPage = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -42,7 +42,10 @@ const ContactUsPage = () => {
                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
                   EMAIL
                 </h2>
-                <a className="text-indigo-500 leading-relaxed">
+                <a
+                  className="text-indigo-500 leading-relaxed"
+                  href="mailto:example@email.com"
+                >
                   example@email.com
                 </a>
                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">

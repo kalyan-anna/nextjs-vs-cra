@@ -77,7 +77,7 @@ export const SiteHeader: React.FC<SiteHeaderProps> = ({
             to="/"
             className="font-bold text-gray-800 uppercase hover:text-gray-700 text-5xl"
           >
-            My Blog - Next.JS
+            My Blog - CRA
           </Link>
           <p className="text-lg text-gray-600">Lorem Ipsum Dolor Sit Amet</p>
         </div>

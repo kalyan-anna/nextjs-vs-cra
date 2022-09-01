@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Daily Dev Tips",
+    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.",
+    "date": "2022-08-20T05:35:07.322Z",
+    "id": "daily-dev-tips"
+  },
+  {
+    "title": "How to force push git",
+    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.",
+    "date": "2022-08-16T05:35:07.322Z",
+    "id": "How-to-force-push-git"
+  },
+  {
+    "title": "Why React Re-Renders",
+    "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.",
+    "date": "2022-08-10T05:35:07.322Z",
+    "id": "why-react-re-renders"
+  }
+]

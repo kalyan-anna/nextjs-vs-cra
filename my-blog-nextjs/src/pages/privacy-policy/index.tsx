@@ -2,12 +2,13 @@ import React from 'react';
 import { getPrivacyPolicy } from '../../lib/api';
 import markdownToHtml from '../../lib/markdownToHtml';
 import { SiteLayout } from '../../layouts/SiteLayout';
+import { NextPage } from 'next';
 
 type PrivacyPolicyPageProps = {
   content: string;
 };
 
-const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ content }) => {
+const PrivacyPolicyPage: NextPage<PrivacyPolicyPageProps> = ({ content }) => {
   return (
     <SiteLayout showTopicNav={false}>
       <section className="text-gray-600 body-font">
